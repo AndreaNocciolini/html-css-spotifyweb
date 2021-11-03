@@ -31,36 +31,24 @@ html {
 }
 /* End Upgrade Button */
 
-/* Main and Header */
+/****** Main and Header **********************/
 .main-header-container {
     display: flex;
 }
 
+/* Header */
 .header-cont {
-    width: 10%;
+    width: 10vw;
     display: flex;
     flex-direction: column;
     color: white;
+    padding: 0.5em;
 }
 
 .logo {
     display: flex;
-    margin: 1em;
+    margin: 0.5em;
     z-index: 99;
-}
-
-.logo-img {
-    display: inline-block;
-    
-}
-
-.logo-img > img{
-    filter: invert(1);
-    margin-right: 0.3em;
-}
-
-.logo-name {
-    font-size: 1.5em;
 }
 
 .user-menu-container,
@@ -76,10 +64,11 @@ html {
 }
 
 .user-menu-container .user-menu li > a,
-.music-menu-container .music-menu li > a {
+.music-menu-container .music-menu li > a, 
+.user-name-container a {
     text-decoration: none;
-    color: grey;
-} 
+    color: #b3b3b3;
+}
 
 .user-menu-container .user-menu li:first-child a:first-child,
 .music-menu-container .music-menu li:first-child a:first-child {
@@ -93,8 +82,13 @@ html {
     filter: brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(210%) hue-rotate(140deg) brightness(100%) contrast(93%);
 }
 
+
+.music-menu-container {
+    overflow: auto;
+}
+
 .music-menu-container h4 {
-    margin: 1em 0;
+    margin: 1em 0 0.5em;
 }
 
 .music-menu-container .music-menu li:first-child a:first-child{
@@ -102,14 +96,56 @@ html {
 }
 
 .music-menu-container .music-menu li a i {
-        font-size: 1.5em;
-        margin-right: 0.1em;
+    font-size: 1.5em;
+    margin-right: 0.3em;
+    vertical-align: text-top;
 }
 
-.main-cont {
-    width: 90%;
+.user-name-container {
+    margin-top: auto;
+    font-size: small;
 }
-/* End Main and Header */
+
+.user-name-container span {
+    display: block;
+}
+
+.install-app {
+    font-size: smaller;
+}
+
+.install-app a i {
+    font-size: 1.1em;
+    padding: 0.2em;
+    border-radius: 50%;
+    border: 1px solid #b3b3b3;
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+
+.install-app::after {
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: #b3b3b3;
+    margin: 0.9em 0;
+    display: block;
+}
+
+.user-name-container .user-name a svg {
+    background-color: #adb5bd;
+    border-radius: 48%;
+    width: 17%;
+}
+
+/* End Header */
+/* Main */
+
+.main-cont {
+    width: 90vw;
+}
+/* End Main */
+/********End Main and Header**********************/
 
 .header-cont,
 .main-cont {
@@ -118,5 +154,5 @@ html {
 }
 
 .header-cont {
-    background-color: red;
+    background-color: black;
 }
