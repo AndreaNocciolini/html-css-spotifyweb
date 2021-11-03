@@ -63,6 +63,23 @@ html {
     font-size: 1.5em;
 }
 
+.user-menu-container {
+    line-height: 1.4em;
+    margin-left: 0.5em;
+}
+
+.user-menu {
+    list-style: none;
+}
+
+.user-menu-container .user-menu li > a {
+    text-decoration: none;
+} 
+
+.user-menu-container .user-menu li a > i {
+    margin-right: 0.4em;
+}
+
 .main-cont {
     width: 90%;
 }
