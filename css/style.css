@@ -6,6 +6,7 @@
 
 html {
     font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
     background-color: black;
 }
 
@@ -59,7 +60,7 @@ html {
 }
 
 .logo-name {
-    font-size: x-large;
+    font-size: 1.5em;
 }
 
 .main-cont {
