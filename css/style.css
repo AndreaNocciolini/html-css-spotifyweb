@@ -86,18 +86,24 @@ html {
     color: white;
 }
 
+.user-menu-container .user-menu li a img,
+.music-menu-container .music-menu li a img {
+    width: 15%;
+    vertical-align: text-top;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(210%) hue-rotate(140deg) brightness(100%) contrast(93%);
+}
+
+.music-menu-container h4 {
+    margin: 1em 0;
+}
 
 .music-menu-container .music-menu li:first-child a:first-child{
     font-size: 1.2em;
 }
 
-.music-menu-container .music-menu li a .fa-plus-square {
-    margin: 0 0.4em;
-    scale: 1.6;
-}
-
-.user-menu-container .user-menu li a > i {
-    margin-right: 0.4em;
+.music-menu-container .music-menu li a i {
+        font-size: 1.5em;
+        margin-right: 0.1em;
 }
 
 .main-cont {
@@ -107,7 +113,7 @@ html {
 
 .header-cont,
 .main-cont {
-    height: 500px;
+    height: 100vh;
     background-color: salmon;
 }
 
