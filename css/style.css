@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    background-color: black;
+}
+
+/* Upgrade Button */
+.btn-top-container {
+    height: 4em;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+}
+
+.btn-top {
+    border: 1px solid white;
+     padding: 0.8em 2.5em;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: x-small;
+}
+/* End Upgrade Button */
+
+/* Main and Header */
+.main-header-container {
+    display: flex;
+}
+
+.header-cont {
+    width: 10%;
+}
+
+.main-cont {
+    width: 90%;
+}
+/* End Main and Header */
+
+.header-cont,
+.main-cont {
+    height: 500px;
+    background-color: salmon;
+}
+
+.header-cont {
+    background-color: red;
+}
