@@ -23,7 +23,7 @@ html {
 
 .btn-top {
     border: 1px solid white;
-     padding: 0.8em 2.5em;
+    padding: 0.8em 2.5em;
     border-radius: 20px;
     background-color: black;
     color: white;
@@ -64,7 +64,7 @@ html {
 }
 
 .user-menu-container {
-    line-height: 1.4em;
+    line-height: 1.8em;
     margin-left: 0.5em;
 }
 
@@ -74,7 +74,12 @@ html {
 
 .user-menu-container .user-menu li > a {
     text-decoration: none;
+    color: grey;
 } 
+
+.user-menu-container .user-menu li:first-child a:first-child {
+    color: white;
+}
 
 .user-menu-container .user-menu li a > i {
     margin-right: 0.4em;
