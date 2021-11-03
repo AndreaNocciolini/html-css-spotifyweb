@@ -118,9 +118,7 @@ html {
     font-size: small;
 }
 
-.user-name-container span {
-    display: block;
-}
+
 
 .install-app {
     font-size: smaller;
@@ -142,6 +140,14 @@ html {
     background-color: #b3b3b3;
     margin: 0.9em 0;
     display: block;
+}
+
+.user-name-container div .svg-user-name {
+    display: inline;
+}
+
+.user-name-container div .svg-user-name svg {
+    vertical-align: middle;
 }
 
 .user-name-container .user-name a svg {
