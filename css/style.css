@@ -115,8 +115,8 @@ html {
 }
 
 .install-app a i {
-    font-size: 1.1em;
-    padding: 0.2em;
+    font-size: 0.8em;
+    padding: 0.5em;
     border-radius: 50%;
     border: 1px solid #b3b3b3;
     vertical-align: middle;
@@ -136,6 +136,7 @@ html {
     background-color: #adb5bd;
     border-radius: 48%;
     width: 17%;
+    margin-right: 0.3em;
 }
 
 /* End Header */
@@ -147,9 +148,16 @@ html {
 /* End Main */
 /********End Main and Header**********************/
 
+/* Footer */
+footer {
+    background-color: black;
+    height: 4.5em;
+}
+/* End Footer */
+
 .header-cont,
 .main-cont {
-    height: 100vh;
+    height: calc(100vh - 4.5em);
     background-color: salmon;
 }
 
