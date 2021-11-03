@@ -63,22 +63,37 @@ html {
     font-size: 1.5em;
 }
 
-.user-menu-container {
+.user-menu-container,
+.music-menu-container {
     line-height: 1.8em;
     margin-left: 0.5em;
 }
 
-.user-menu {
+.user-menu-container .user-menu,
+.music-menu-container .music-menu {
     list-style: none;
+    font-size: small;
 }
 
-.user-menu-container .user-menu li > a {
+.user-menu-container .user-menu li > a,
+.music-menu-container .music-menu li > a {
     text-decoration: none;
     color: grey;
 } 
 
-.user-menu-container .user-menu li:first-child a:first-child {
+.user-menu-container .user-menu li:first-child a:first-child,
+.music-menu-container .music-menu li:first-child a:first-child {
     color: white;
+}
+
+
+.music-menu-container .music-menu li:first-child a:first-child{
+    font-size: 1.2em;
+}
+
+.music-menu-container .music-menu li a .fa-plus-square {
+    margin: 0 0.4em;
+    scale: 1.6;
 }
 
 .user-menu-container .user-menu li a > i {
