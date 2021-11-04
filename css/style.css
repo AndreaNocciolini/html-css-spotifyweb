@@ -209,10 +209,22 @@ html {
 
 .main-cont div h2 {
     margin-bottom: 1.5em;
+    font-weight: bold;
 }
 
 .main-cont div p {
     margin-bottom: 1.5em;
+}
+
+.main-cont .recently-played ul li div h4,
+.main-cont .for-you ul li div h4,
+.main-cont .popular-artists ul li div h4 {
+    font-weight: 900;
+}
+
+.main-cont .recently-played ul li div, 
+.main-cont .for-you ul li div {
+    position: relative;
 }
 
 .main-cont .recently-played ul,
@@ -233,7 +245,8 @@ html {
 .main-cont .recently-played ul li div img:hover,
 .main-cont .for-you ul li div img:hover,
 .main-cont .popular-artists ul li div img:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.35;
+    cursor: pointer;
 }
 /*+++++++++++++++++++********++++++++++++*******+++++*/
 /*^^^^^^^^^^^^^^lllllllllllllllll*************/
@@ -313,6 +326,11 @@ footer {
 .song-info span a {
     text-decoration: none;
     color: #b3b3b3;;
+}
+
+.col-footer-sx .song-container .song-name a {
+    color: white;
+    font-weight: bold;
 }
 /******************************Finish col-footer-sx*/
 
