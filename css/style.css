@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -42,11 +43,12 @@ html {
 /****** Main and Header **********************/
 .main-header-container {
     display: flex;
+    overflow: hidden;
 }
 
 /* Header */
 .header-cont {
-    width: 10vw;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     color: white;
@@ -161,7 +163,7 @@ html {
 /* Main */
 
 .main-cont {
-    width: 90vw;
+    width: 85vw;
 }
 /* End Main */
 /********End Main and Header**********************/
@@ -170,7 +172,126 @@ html {
 footer {
     background-color: #2b2b2b;
     height: 4.5em;
+    display: flex;
+    padding: 0.5em;
 }
+
+[class^="col-footer"] {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.col-footer-sx {/*********Star col-footer-sx*/
+    width: 15%;
+}
+
+.song-container:after {   
+    content: "";   
+    display: table;   
+    clear: both; 
+}
+
+.song-container {
+    display: flex;
+}
+
+.song-container img {
+    width: 20%;
+    float: left;
+    margin: 0 0.5em;
+}
+
+.song-info {
+    line-height: 1.3;
+    margin-top: 0.3em;
+}
+
+.song-info span {
+    display: block;
+    font-size: small;
+    color: #b3b3b3;
+}/******************************Finish col-footer-sx*/
+
+.col-footer-add-song {/********Start col-footer-add-song*/
+    width: 4%;
+    display: flex;
+    justify-content: space-around;
+    color: #b3b3b3;
+}
+
+.col-footer-add-song span a {
+    text-decoration: none;
+    color: #b3b3b3;
+}/****************************End col-footer-add-song*/
+
+.col-footer-mid {/************Start col-footer-mid*/
+    width: 62%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.player-buttons {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.player-buttons button {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 0.9em;
+}
+
+.player-buttons button .fa-play-circle {
+    font-size: 2em;
+}
+
+.song-time-bar {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    font-size: x-small;
+    color: white;
+}
+
+.time-bar {
+    display: inline-block;
+    height: 3px;
+    width: 80%;
+    background-color: white;
+    margin-top: 0.6em;
+}/***************************End col-footer-add-song*/
+
+.col-footer-dx {/***********Start col-footer-dx*/
+    width: 19%;
+    display: flex;
+}
+
+.bot-right-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.bot-right-menu li a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.volume-bar {
+    display: inline-block;
+    height: 2px;
+    background-color: white;
+    width: 6em;
+    margin-bottom: 0.3em;
+}/***************************End col-footer-add-song*/
 /* End Footer */
 
 .header-cont,
