@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 80%;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
 }
@@ -41,6 +41,13 @@ html {
 /* End Upgrade Button */
 
 /****** Main and Header **********************/
+.header-cont,
+.main-cont {
+    height: calc(100vh - 4.5em);
+    background-color: black;
+    padding: 1em;
+}
+
 .main-header-container {
     display: flex;
     overflow: hidden;
@@ -48,7 +55,7 @@ html {
 
 /* Header */
 .header-cont {
-    width: 15vw;
+    width: 210px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -74,7 +81,6 @@ html {
 .user-menu-container .user-menu,
 .music-menu-container .music-menu {
     list-style: none;
-    font-size: small;
 }
 
 .user-menu-container .user-menu li a span {
@@ -114,17 +120,14 @@ html {
 }
 
 .music-menu-container .music-menu li a i {
-    font-size: 1.5em;
     margin-right: 0.3em;
     vertical-align: text-top;
+    font-size: 1.5em;
 }
 
 .user-name-container {
     margin-top: auto;
-    font-size: small;
 }
-
-
 
 .install-app {
     font-size: smaller;
@@ -167,7 +170,9 @@ html {
 /* Main */
 
 .main-cont {
-    width: 85vw;
+    width: calc(100vw - 210px);
+    overflow: auto;
+    color: white;
 }
 
 .main-nav-container {
@@ -182,7 +187,6 @@ html {
     justify-content: center;
     list-style: none;
     width: 50%;
-    font-size: small;
     gap: 1em;
 }
 
@@ -191,6 +195,56 @@ html {
     font-weight: bold;
     color: #b3b3b3;
 }
+
+.main-cont div h2 {
+    margin-bottom: 1.5em;
+}
+
+.main-cont div p {
+    margin-bottom: 1.5em;
+}
+
+.main-cont .recently-played ul,
+.main-cont .for-you ul,
+.main-cont .popular-artists ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-cont .recently-played ul li div img,
+.main-cont .for-you ul li div img,
+.main-cont .popular-artists ul li div img {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+#einaudi-img {
+    width: 98%;
+}
+
+.main-cont .popular-artists ul li div img {
+    border-radius: 50%;
+}
+
+.main-cont .recently-played ul li div,
+.main-cont .for-you ul li div,
+.main-cont .popular-artists ul li div {
+    font-size: x-small;
+    text-align: center;
+    width: 90%;
+}
+
+.for-you,
+.popular-artists {
+    width: 40%;
+    margin-top: 2em;
+}
+
+.recently-played {
+    margin-top: 2em;
+}
+
 /* End Main */
 /********End Main and Header**********************/
 
@@ -235,7 +289,6 @@ footer {
 
 .song-info span {
     display: block;
-    font-size: small;
     color: #b3b3b3;
 }/******************************Finish col-footer-sx*/
 
@@ -320,11 +373,7 @@ footer {
 }/***************************End col-footer-add-song*/
 /* End Footer */
 
-.header-cont,
-.main-cont {
-    height: calc(100vh - 4.5em);
-    background-color: salmon;
-}
+
 
 .header-cont {
     background-color: black;
