@@ -364,10 +364,40 @@ footer {
 .time-bar {
     display: inline-block;
     height: 3px;
-    width: 80%;
+    width: 60%;
     background-color: white;
     margin-top: 0.6em;
-}/***************************End col-footer-add-song*/
+}
+
+.time-bar-overlap {
+    display: flex;
+    height: 3px;
+    width: 20%;
+    background-color: #b3b3b3;
+    margin-top: 0.6em;
+    margin-right: -1.4em;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.point-bar {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.time-bar-overlap:hover {
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+.time-bar-overlap:hover .point-bar {
+    visibility: visible;
+}
+    /***************************End col-footer-mid*/
 
 .col-footer-dx {/***********Start col-footer-dx*/
     width: 19%;
