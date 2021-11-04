@@ -222,11 +222,6 @@ html {
     font-weight: 900;
 }
 
-.main-cont .recently-played ul li div, 
-.main-cont .for-you ul li div {
-    position: relative;
-}
-
 .main-cont .recently-played ul,
 .main-cont .for-you ul,
 .main-cont .popular-artists ul {
@@ -239,6 +234,7 @@ html {
 .main-cont .for-you ul li div img,
 .main-cont .popular-artists ul li div img {
     width: 100%;
+    min-width: 100%;
     margin-bottom: 1.5em;
 }
 
@@ -452,7 +448,11 @@ footer {
 
 /* Media Query */
 @media screen and (max-width: 1110px) {
-    
+    .main-cont .recently-played ul,
+    .main-cont .for-you ul,
+    .main-cont .popular-artists ul {
+    flex-wrap: wrap;
+}
 }
 
 @media screen and (max-width: 700px) {
