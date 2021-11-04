@@ -450,6 +450,17 @@ footer {
 }
 /* End Footer */
 
-.header-cont {
-    background-color: black;
+/* Media Query */
+@media screen and (max-width: 1110px) {
+    
 }
+
+@media screen and (max-width: 700px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+/* End Media Query */
