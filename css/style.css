@@ -241,15 +241,14 @@ html {
     width: 100%;
     margin-bottom: 1.5em;
 }
-/*********** RIPARTI DA QUI************************** */
+
 .main-cont .recently-played ul li div img:hover,
 .main-cont .for-you ul li div img:hover,
 .main-cont .popular-artists ul li div img:hover {
     opacity: 0.35;
     cursor: pointer;
 }
-/*+++++++++++++++++++********++++++++++++*******+++++*/
-/*^^^^^^^^^^^^^^lllllllllllllllll*************/
+
 #einaudi-img {
     width: 98%;
 }
