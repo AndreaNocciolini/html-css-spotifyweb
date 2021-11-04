@@ -87,11 +87,17 @@ html {
     vertical-align: bottom;
 }
 
-.user-menu-container .user-menu li > a,
-.music-menu-container .music-menu li > a, 
+.user-menu-container .user-menu li  a,
+.music-menu-container .music-menu li  a, 
 .user-name-container a {
     text-decoration: none;
     color: #b3b3b3;
+}
+
+.user-menu-container .user-menu li  a:hover,
+.music-menu-container .music-menu li  a:hover, 
+.user-name-container a:hover {
+    color: white;
 }
 
 .user-menu-container .user-menu li:first-child a:first-child,
@@ -173,6 +179,7 @@ html {
     width: calc(100vw - 210px);
     overflow: auto;
     color: white;
+    background-color: #141922;
 }
 
 .main-nav-container {
@@ -194,6 +201,10 @@ html {
     text-decoration: none;
     font-weight: bold;
     color: #b3b3b3;
+}
+
+.main-nav-container ul li a:hover {
+    color: white;
 }
 
 .main-cont div h2 {
@@ -290,7 +301,13 @@ footer {
 .song-info span {
     display: block;
     color: #b3b3b3;
-}/******************************Finish col-footer-sx*/
+}
+
+.song-info span a {
+    text-decoration: none;
+    color: #b3b3b3;;
+}
+/******************************Finish col-footer-sx*/
 
 .col-footer-add-song {/********Start col-footer-add-song*/
     width: 4%;
@@ -371,9 +388,13 @@ footer {
     width: 6em;
     margin-bottom: 0.3em;
 }/***************************End col-footer-add-song*/
+
+.col-footer-sx div span a:hover,
+.col-footer-add-song span a:hover,
+.col-footer-dx ul li a:hover {
+    color: white;
+}
 /* End Footer */
-
-
 
 .header-cont {
     background-color: black;
