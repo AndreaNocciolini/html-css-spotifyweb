@@ -112,6 +112,9 @@ html {
     filter: brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(210%) hue-rotate(140deg) brightness(100%) contrast(93%);
 }
 
+.user-menu-container .user-menu li a img:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(128deg) brightness(106%) contrast(100%);
+}
 
 .music-menu-container {
     overflow: auto;
@@ -511,6 +514,10 @@ footer {
     .install-app span,
     .music-menu-container {
         display: none;
+    }
+
+    .install-app i {
+        margin-left: 0.95em;
     }
 
     .user-menu-container .user-menu li a img, 
