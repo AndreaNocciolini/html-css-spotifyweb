@@ -436,7 +436,7 @@ footer {
 
 /* Animation Button Undo */
 .player-buttons button .fa-undo:hover {
-    animation: rotate 2s linear infinite;
+    animation: rotate 5s linear infinite;
 }
 
 @keyframes rotate {
