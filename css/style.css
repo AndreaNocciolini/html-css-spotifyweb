@@ -297,6 +297,10 @@ html {
     visibility: visible;
 }
 
+.main-cont .recently-played ul li i:hover {
+    cursor: pointer;
+}
+
 #einaudi-img {
     width: 94%;
 }
