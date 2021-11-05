@@ -425,10 +425,25 @@ footer {
     font-size: 0.9em;
 }
 
+.player-buttons button:hover {
+    cursor: pointer;
+    color: chartreuse;
+}
+
 .player-buttons button .fa-play-circle {
     font-size: 2em;
 }
 
+/* Animation Button Undo */
+.player-buttons button .fa-undo:hover {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(360deg);
+    }
+}
+/*End Animation Button Undo */
 .song-time-bar {
     width: 50%;
     display: flex;
