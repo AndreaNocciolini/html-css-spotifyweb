@@ -201,6 +201,7 @@ html {
     text-decoration: none;
     font-weight: bold;
     color: #b3b3b3;
+    font-size: smaller;
 }
 
 .main-nav-container ul li a:hover {
@@ -263,7 +264,7 @@ html {
 
 .for-you,
 .popular-artists {
-    width: 40%;
+    width: 100%;
     margin-top: 2em;
 }
 
@@ -449,10 +450,18 @@ footer {
 
 /* Media Query */
 @media screen and (max-width: 1110px) {
+    .main-nav-container ul {
+        flex-wrap: wrap;
+    }
+
     .main-cont .recently-played ul,
     .main-cont .for-you ul,
     .main-cont .popular-artists ul {
     flex-wrap: wrap;
+    }
+
+    .main-cont .for-you ul li div {
+    flex-basis: 300px;
     }
 
     .col-footer-add-song {
