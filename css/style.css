@@ -363,6 +363,7 @@ footer {
     display: flex;
     width: 20%;
     justify-content: space-around;
+    min-width: 120px;
 }
 
 .player-buttons button {
@@ -507,6 +508,7 @@ footer {
     .user-menu-container .user-menu li a span,
     .user-menu-container .install-app a span,
     .user-name-container .user-name .name,
+    .install-app span,
     .music-menu-container {
         display: none;
     }
