@@ -330,9 +330,13 @@ footer {
     color: #b3b3b3;;
 }
 
-.col-footer-sx .song-container .song-name a {
+.col-footer-sx .song-container .album-name a {
     color: white;
     font-weight: bold;
+}
+
+.author-name {
+    font-size: smaller;
 }
 /******************************Finish col-footer-sx*/
 
