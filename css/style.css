@@ -247,7 +247,9 @@ html {
     width: calc(100% / 6);
 }
 
-.main-cont .recently-played ul li div {
+.main-cont .recently-played ul li div,
+.main-cont .for-you ul li div,
+.main-cont .popular-artists ul li div {
     position: relative;
 }
 
@@ -258,7 +260,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-27%, -55%);
     font-size: 4.5em;
 }
 
@@ -277,7 +279,7 @@ html {
 .main-cont .popular-artists ul li div img {
     width: 100%;
     min-width: 100%;
-    margin-bottom: 1.5em;
+    margin: 1em 1em 1.5em;
 }
 
 .main-cont .recently-played ul li div img:hover,
