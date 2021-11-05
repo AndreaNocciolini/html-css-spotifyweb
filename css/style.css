@@ -62,6 +62,10 @@ html {
     padding: 0.5em;
 }
 
+.logo-small {
+    display: none;
+}
+
 .logo {
     display: flex;
     margin: 0.5em;
@@ -198,6 +202,8 @@ html {
     list-style: none;
     width: 50%;
     gap: 1em;
+    height: 3em;
+    min-width: 100%;
 }
 
 .main-nav-container ul li a {
@@ -211,6 +217,15 @@ html {
     color: white;
 }
 
+.main-nav-container ul li:hover a:after {
+    content: "";
+    display: block;
+    background-color: chartreuse;
+    height: 2px;
+    width: 40px;
+    margin: 0 auto;
+  }
+
 .main-cont div h2 {
     margin-bottom: 1.5em;
     font-weight: bold;
@@ -220,9 +235,9 @@ html {
     margin-bottom: 1.5em;
 }
 
-.main-cont .recently-played ul li div h4,
-.main-cont .for-you ul li div h4,
-.main-cont .popular-artists ul li div h4 {
+.main-cont .recently-played ul li h4,
+.main-cont .for-you ul li  h4,
+.main-cont .popular-artists ul li h4 {
     font-weight: 900;
 }
 
@@ -232,12 +247,29 @@ html {
     width: calc(100% / 6);
 }
 
+.main-cont .recently-played ul li div {
+    position: relative;
+}
+
+.main-cont .recently-played ul li i,
+.main-cont .for-you ul li i,
+.main-cont .popular-artists ul li i {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 4.5em;
+}
+
 .main-cont .recently-played ul,
 .main-cont .for-you ul,
 .main-cont .popular-artists ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    font-size: x-small;
+    text-align: center;
 }
 
 .main-cont .recently-played ul li div img,
@@ -255,6 +287,12 @@ html {
     cursor: pointer;
 }
 
+.main-cont .recently-played ul li:hover i,
+.main-cont .for-you ul li:hover i,
+.main-cont .popular-artists ul li:hover i {
+    visibility: visible;
+}
+
 #einaudi-img {
     width: 94%;
 }
@@ -266,9 +304,12 @@ html {
 .main-cont .recently-played ul li div,
 .main-cont .for-you ul li div,
 .main-cont .popular-artists ul li div {
+    width: 90%;
+}
+
+.main-cont .recently-played {   
     font-size: x-small;
     text-align: center;
-    width: 90%;
 }
 
 .for-you,
@@ -496,6 +537,17 @@ footer {
 @media screen and (max-width: 600px) {
     .header-cont {
         width: 50px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+        z-index: 999;
+        width: 75%;
+        margin-left: 0.4em;
     }
 
     .main-cont .recently-played ul li,
