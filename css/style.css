@@ -223,6 +223,12 @@ html {
     font-weight: 900;
 }
 
+.main-cont .recently-played ul li,
+.main-cont .for-you ul li,
+.main-cont .popular-artists ul li {
+    width: calc(100% / 6);
+}
+
 .main-cont .recently-played ul,
 .main-cont .for-you ul,
 .main-cont .popular-artists ul {
@@ -307,7 +313,6 @@ footer {
     width: 20%;
     float: left;
     margin: 0 0.5em;
-    flex-basis: 90px;
 }
 
 .song-info {
@@ -450,10 +455,13 @@ footer {
 
 /* Media Query */
 @media screen and (max-width: 1110px) {
-    .main-nav-container ul {
-        flex-wrap: wrap;
+    .main-cont .recently-played ul li,
+    .main-cont .for-you ul li,
+    .main-cont .popular-artists ul li {
+        width: calc(100% / 4);
     }
 
+    .main-nav-container ul,
     .main-cont .recently-played ul,
     .main-cont .for-you ul,
     .main-cont .popular-artists ul {
@@ -470,11 +478,40 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    
+    .main-cont .recently-played ul li,
+    .main-cont .for-you ul li,
+    .main-cont .popular-artists ul li {
+        min-width: 25vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .header-cont {
+        width: 50px;
+    }
+
+    .main-cont .recently-played ul li,
+    .main-cont .for-you ul li,
+    .main-cont .popular-artists ul li {
+        min-width: 40vw;
+    }
+
+    .main-cont {
+        width: calc(100vw - 50px);
+    }
     
+    .user-menu-container .user-menu li a span,
+    .user-menu-container .install-app a span,
+    .user-name-container .user-name .name,
+    .music-menu-container {
+        display: none;
+    }
+
+    .user-menu-container .user-menu li a img, 
+    .music-menu-container .music-menu li a img,
+    .user-name-container .user-name a svg {
+        width: 80%;
+    }
 }
 
 /* End Media Query */
