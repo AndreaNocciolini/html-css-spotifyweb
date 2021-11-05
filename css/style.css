@@ -19,7 +19,9 @@ html {
     align-items: center;
     justify-content: end;
     position: fixed;
-    width: 100%;
+    width: calc(100vw - 210px);
+    z-index: 999;
+    margin-left: 210px;
 }
 
 .btn-top {
@@ -537,6 +539,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .btn-top-container {
+        width: calc(100vw - 50px);
+        margin-left: 50px;
+    }
+
     .header-cont {
         width: 50px;
     }
