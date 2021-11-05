@@ -219,6 +219,7 @@ html {
     color: white;
 }
 
+.main-nav-container ul li:first-child a:after,
 .main-nav-container ul li:hover a:after {
     content: "";
     display: block;
