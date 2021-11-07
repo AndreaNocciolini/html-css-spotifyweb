@@ -298,7 +298,9 @@ html {
     visibility: visible;
 }
 
-.main-cont .recently-played ul li i:hover {
+.main-cont .recently-played ul li i:hover,
+.main-cont .for-you ul li:hover,
+.main-cont .popular-artists ul li:hover {
     cursor: pointer;
 }
 
@@ -623,4 +625,40 @@ footer {
     }
 }
 
+@media screen and (max-width: 360px) {
+
+    .main-cont .recently-played ul li,
+    .main-cont .for-you ul li,
+    .main-cont .popular-artists ul li {
+        min-width: 39vw;
+    }
+
+    .col-footer-sx .song-container img,
+    .col-footer-dx ul .volume-bar {
+        display: none;
+    }
+
+    .col-footer-sx .song-container .album-name {
+        font-size: x-small;
+    }
+
+    .col-footer-sx .song-container .song-name {
+        font-size: xx-small;
+    }
+
+    .col-footer-add-song {
+        padding-left: 3.2em;
+        font-size: 0.9em;
+        }
+
+    .col-footer-mid .song-time-bar {
+        font-size: xx-small;
+        gap: 0.2em;
+        width: 80%;
+    }
+
+    .col-footer-dx ul {
+        flex-wrap: wrap;
+    }
+}
 /* End Media Query */
