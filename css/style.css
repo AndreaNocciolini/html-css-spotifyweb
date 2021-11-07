@@ -350,6 +350,16 @@ footer {
     align-items: center;
 }
 
+.col-footer-sx div span a:hover,
+.col-footer-add-song span a:hover,
+.col-footer-dx ul li a:hover {
+    color: white;
+}
+
+.col-footer-sx div .album-name a:hover {
+    color: #04e900;
+}
+
 .col-footer-sx {/*********Star col-footer-sx*/
     width: 15%;
 }
@@ -409,7 +419,17 @@ footer {
 .col-footer-add-song span a {
     text-decoration: none;
     color: #b3b3b3;
-}/****************************End col-footer-add-song*/
+}
+
+.col-footer-add-song span .heart:hover .fa-heart {
+    font-weight: 900;
+    color: chartreuse;
+}
+
+.col-footer-add-song span .folder:hover .fa-folder {
+    font-weight: 900;
+}
+/****************************End col-footer-add-song*/
 
 .col-footer-mid {/************Start col-footer-mid*/
     width: 62%;
@@ -524,12 +544,6 @@ footer {
     width: 6em;
     margin-bottom: 0.3em;
 }/***************************End col-footer-add-song*/
-
-.col-footer-sx div span a:hover,
-.col-footer-add-song span a:hover,
-.col-footer-dx ul li a:hover {
-    color: white;
-}
 /* End Footer */
 
 /* Media Query */
