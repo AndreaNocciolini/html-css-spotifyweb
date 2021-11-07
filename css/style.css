@@ -644,7 +644,7 @@ footer {
     .main-cont .recently-played ul li,
     .main-cont .for-you ul li,
     .main-cont .popular-artists ul li {
-        min-width: 39vw;
+        min-width: 37vw;
     }
 
     .col-footer-sx .song-container img,
