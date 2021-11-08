@@ -479,6 +479,7 @@ footer {
     font-size: x-small;
     color: white;
     max-width: 480px;
+    min-width: 140px;
 }
 
 .time-bar {
@@ -638,6 +639,28 @@ footer {
         min-width: 38px;
         max-height: 3.6em;
     }
+
+    .col-footer-add-song {
+        padding-left: 7em;
+    }
+
+    .col-footer-sx .song-container .album-name {
+        font-size: x-small;
+    }
+
+    .col-footer-sx .song-container .song-name {
+        font-size: xx-small;
+    }
+
+    .col-footer-dx ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .col-footer-dx ul .volume-bar {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -648,17 +671,8 @@ footer {
         min-width: 37vw;
     }
 
-    .col-footer-sx .song-container img,
-    .col-footer-dx ul .volume-bar {
+    .col-footer-sx .song-container img {
         display: none;
-    }
-
-    .col-footer-sx .song-container .album-name {
-        font-size: x-small;
-    }
-
-    .col-footer-sx .song-container .song-name {
-        font-size: xx-small;
     }
 
     .col-footer-add-song {
