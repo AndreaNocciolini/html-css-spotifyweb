@@ -478,6 +478,7 @@ footer {
     margin-top: 1em;
     font-size: x-small;
     color: white;
+    max-width: 480px;
 }
 
 .time-bar {
