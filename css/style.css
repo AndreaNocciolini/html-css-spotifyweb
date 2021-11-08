@@ -285,16 +285,16 @@ html {
     margin: 1em 1em 1.5em;
 }
 
-.main-cont .recently-played ul li div img:hover,
-.main-cont .for-you ul li div img:hover,
-.main-cont .popular-artists ul li div img:hover {
-    opacity: 0.35;
+.main-cont .recently-played ul li div:hover,
+.main-cont .for-you ul li div:hover,
+.main-cont .popular-artists ul li div:hover {
+    opacity: 0.45;
     cursor: pointer;
 }
 
-.main-cont .recently-played ul li:hover i,
-.main-cont .for-you ul li:hover i,
-.main-cont .popular-artists ul li:hover i {
+.main-cont .recently-played ul li div:hover i,
+.main-cont .for-you ul li div:hover i,
+.main-cont .popular-artists ul li div:hover i {
     visibility: visible;
 }
 
